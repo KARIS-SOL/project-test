@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=VT323&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-family: "VT323", monospace;
+  height: 100vh;
+}
+
+.slider-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.slider-container .left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-container .left-slide .item1,
+.slider-container .left-slide .item2,
+.slider-container .left-slide .item3,
+.slider-container .left-slide .item4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.slider-container .left-slide .item1 {
+  background-color: #FD3555;
+}
+.slider-container .left-slide .item2 {
+  background-color: #2A86BA;
+}
+.slider-container .left-slide .item3 {
+  background-color: #252E33;
+}
+.slider-container .left-slide .item4 {
+  background-color: #FFB866;
+}
+.slider-container .left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+.slider-container .right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+  background-color: #FD3555;
+}
+.slider-container .right-slide .item1,
+.slider-container .right-slide .item2,
+.slider-container .right-slide .item3,
+.slider-container .right-slide .item4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.slider-container .right-slide .item1 .item1,
+.slider-container .right-slide .item2 .item1,
+.slider-container .right-slide .item3 .item1,
+.slider-container .right-slide .item4 .item1 {
+  background-image: url("../video/1.jpeg");
+}
+.slider-container .right-slide .item1 .item2,
+.slider-container .right-slide .item2 .item2,
+.slider-container .right-slide .item3 .item2,
+.slider-container .right-slide .item4 .item2 {
+  background-image: url("../video/2.jpeg");
+}
+.slider-container .right-slide .item1 .item3,
+.slider-container .right-slide .item2 .item3,
+.slider-container .right-slide .item3 .item3,
+.slider-container .right-slide .item4 .item3 {
+  background-image: url("../video/3.jpeg");
+}
+.slider-container .right-slide .item1 .item4,
+.slider-container .right-slide .item2 .item4,
+.slider-container .right-slide .item3 .item4,
+.slider-container .right-slide .item4 .item4 {
+  background-image: url("../video/4.jpeg");
+}
+.slider-container button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+.slider-container button:hover {
+  color: #222;
+}
+.slider-container button:focus {
+  outline: none;
+}
+.slider-container button .action-buttons {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+.slider-container button .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.slider-container button .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
